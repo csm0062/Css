@@ -1,0 +1,26 @@
+/*width: 박스 모델 영역의 가로길이를 지정하는 속성
+  height: 박스 모델 영역의 세로 길이를 지정하는 속성
+  height는 절대수치로만 지정할 수 있고, 상대 수치로는 지정할 수 없다.*/
+  div {
+    margin: 20px;
+  }
+
+  .box1 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .box2 {
+    background: skyblue;
+    width: 50%;
+    height: 300px;
+  }
+
+  .box3 {
+    background: lightgreen;
+    width: 30%;
+    height: 30%;
+  }
