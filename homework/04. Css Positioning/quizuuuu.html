@@ -17,9 +17,6 @@ header {
 	background-color: #F46075;
 	position: relative;
 }
-header img {
-	float: right;
-}
 header nav {
 	width:70%;
 	margin-top: 50px;
@@ -27,7 +24,7 @@ header nav {
 	position: absolute;
 }
 nav ul{
-	list-style-type:none;	
+	list-style-type:none;
 }
 nav ul li{
 	font-weight:bold;
@@ -36,7 +33,10 @@ nav ul li{
 }
 nav ul li a{
 	color:white;
-	text-decoration:none;	
+	text-decoration:none;
+}
+header img {
+	position: absolute;
 }
 footer p {
 	padding:20px;
@@ -51,21 +51,26 @@ p {
 section {
   width:580px;
   padding:5px;
-  float: inline-start;
+  float: left;
 }
 section article{
 	width:250px;
 	height:220px;	
 	margin:5px;
-	padding:10px;
+	padding:10px;	
 	border:1px solid #ccc;
+	display: inline-block;
 }
 aside{
   width:200px;
   height:auto;
   margin-top:80px;
+  float: right;
   border: 1px solid green;
-  display: inline-table;
+}
+aside img {
+	width: 100%;
+	margin-bottom: 10px;
 }
 footer{
 	width: 800px;
@@ -80,16 +85,18 @@ footer{
 	-moz-transition:2s;
 	-o-transition:2s;
 	-ms-transition:2s;
-	/* display: inline-table; */
-	float: left;
+	margin: 10px;
 }
 .at1:hover{
 	background-color:#cf9;
 	border:1px solid green;
+	float: left;
 }
 .at2:hover{
 	background-color:#a2d0ff;;
 	border:1px solid blue;
+	float: left;
+	
 }
 .at3:hover{
 	background-color:#ebcbfe;
@@ -103,7 +110,7 @@ footer{
 </head>
 <body>
 <div id="wrapper">
-<header>
+<heade>
   <nav>
     <ul>
       <li><a href="#">애완견 종류</a></li>
@@ -112,7 +119,9 @@ footer{
       <li><a href="#">더불어살기</a></li>
     </ul>
   </nav>
-  <img src="images/nav2.png" alt="icon">
+  <nav>
+
+  </nav>
 </header>
 <section>
   <h2>강아지 용품 준비하기</h2>
